@@ -1,0 +1,17 @@
+{
+  "name": "jira-mcp",
+  "version": "1.0.0",
+  "description": "Jira MCP Server – issue search (JQL), create, update, comment, status transitions, and project listing for security incident management",
+  "transport": ["stdio", "http-streamable"],
+  "tools": [
+    { "name": "jira_health_check", "description": "Test connection, verify credentials, and get account/server info" },
+    { "name": "search_issues", "description": "Search Jira issues using JQL query language" },
+    { "name": "get_issue", "description": "Get full details of a single issue including description and comments" },
+    { "name": "create_issue", "description": "Create a new issue (incident, task, bug, etc.)" },
+    { "name": "update_issue", "description": "Update summary, description, priority, or labels of an existing issue" },
+    { "name": "add_comment", "description": "Add a comment to record investigation findings or actions" },
+    { "name": "list_transitions", "description": "List available status transitions for an issue" },
+    { "name": "transition_issue", "description": "Move an issue to a new status (e.g. In Progress, Resolved, Closed)" },
+    { "name": "list_projects", "description": "List all accessible Jira projects with keys and types" }
+  ]
+}
